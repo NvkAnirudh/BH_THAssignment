@@ -1,0 +1,4 @@
+numpy==1.26.4
+pandas
+# talib
+# conda install -c conda-forge ta-lib
