@@ -23,6 +23,31 @@ conda install -c conda-forge ta-lib
 
 If its still not working, you can ask GPT to code each of the technical indicators. 
 
-You do not have to create a transformer from scratch, feel free to use a pretrained model and fine tune it
+### Project Structure
+
+The project repo is organized into several folders and files.
+**Relevant (Important) Folders:**
+- Data 
+    - data.csv: Original data
+    - df_with_predictions.csv: Original data with model predictions
+    - trades_blotter.csv: Trades 
+- Solution_notebooks
+    - TEncoder_solution.ipynb: Contains the implementation of the transformer encoder with a classification head architecture. 
+    - trading_blotter.ipynb: Contains the implementation of trading environment
+- Models
+    - best_model_checkpoint.pth: Weights of the model stored after early stopping
+    - transformer_agent.pth: Weights of the model after full training (20 epochs)
+
+**Not so Important Folders:**
+- Research
+    - research.ipynb: Contains feature engineering, implementation of PCA and t-SNE (along with visualizations) for dimensionality reduction and to check if the data had any clusters for label generation. 
+    - TST.py: Contains the implementation of Time Series Transformer (used mainly for time series forecasting). This architecture was abandoned due to its poor performance even after a lot of fine-tuning. 
+- Simple_blotters
+    - Given implementation of trading blotter with PPO
+    - simple_blotter.ipynb: Updated version of the given notebook with calculated metrics
+- Files: 
+    - requirements.txt: All the used packages in the project
+    - BH Report.pdf: Documentation of the project
+
 
 
