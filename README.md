@@ -16,6 +16,11 @@ pip install ta-lib==0.4.0
 
 pip install stable-baselines3==1.3.0
 ```
+If the above commands don't work, try using `conda` for installation:
+```
+conda install -c conda-forge ta-lib
+```
+
 If its still not working, you can ask GPT to code each of the technical indicators. 
 
 You do not have to create a transformer from scratch, feel free to use a pretrained model and fine tune it
