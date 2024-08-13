@@ -1,4 +1,12 @@
 numpy==1.26.4
 pandas
+torch
+transformers
+scikit-learn
+matplotlib
+seaborn
+imblearn
+gym
+stable_baselines3
 # talib
 # conda install -c conda-forge ta-lib
