@@ -26,6 +26,7 @@ If its still not working, you can ask GPT to code each of the technical indicato
 ### Project Structure
 
 The project repo is organized into several folders and files.
+
 **Relevant (Important) Folders:**
 - Data 
     - data.csv: Original data
